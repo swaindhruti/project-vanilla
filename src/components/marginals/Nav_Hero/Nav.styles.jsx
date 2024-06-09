@@ -6,16 +6,16 @@ const NavCont = styled.nav`
   ${tw`
   bg-[#151515]
   w-[100%]
-  fixed 
+  fixed
   top-0
-  z-10
-  rounded-b
+  z-50
+  
   `}
 `
 
 export const InnrNavCont = styled.div`
   background-image: url(${links.stars});
-  ${tw`flex items-center justify-between p-4`}
+  ${tw`flex items-center justify-between px-6 py-4 z-50`}
 `
 
 export const Logo = styled.div`
@@ -25,9 +25,9 @@ export const Logo = styled.div`
   sm:h-[40px] 
   sm:w-[40px] 
   md:h-[54px] 
-  md:w-[54px] 
-  ml-5 
-  mt-2
+  md:w-[54px]
+  cursor-pointer
+  z-50
   `}
 `
 export const LogoImg = styled.img`
@@ -57,22 +57,22 @@ export const MenuItem = styled.div`
 `
 
 export const Menu2 = styled.div`
-  ${tw`flex items-center min-[903px]:hidden `}
+  ${tw`min-[903px]:hidden items-center flex z-50`}
 `
 
 export const MenuIcon = styled.div`
-  ${tw`mr-7`}
+  ${tw``}
 `
 
 export const ResMen = styled.div`
-  ${tw`z-10 mr-5  min-[903px]:hidden`}
+  background-image: url(${links.stars});
+  ${tw`z-10 min-[903px]:hidden h-screen grid place-items-center w-full`}
 `
 export const ResList = styled.ul`
-  background-image: url(${links.stars});
-  ${tw`flex flex-col items-center justify-center pt-6 backdrop-blur-md`}
+  ${tw`flex flex-col items-center fixed top-0 left-0 h-full w-full justify-center gap-10`}
 `
 export const ResItem = styled.li`
-  ${tw`pb-[60px]`}
+  ${tw` mb-3 cursor-pointer`}
 `
 
 export const ResAnchor = styled.a`
